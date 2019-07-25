@@ -1,16 +1,16 @@
 ### Mündəricat
 
-*_Machine learning_* [haqqında](../blob/master/Giriş.ipynb)
+*_Machine learning_* [haqqında](../master/Giriş.ipynb)
 
 
 
 
-*_Dataset datasetin yüklənməsi,Scikit-learn_* [haqqında](../blob/master/dataset.ipynb) 
+*_Dataset datasetin yüklənməsi,Scikit-learn_* [haqqında](../master/dataset.ipynb) 
 
 
 
 
-*_Nəzarətli öyrənmə (supervised learning)_* [haqqında](../blob/master/.ipynb) 
+*_Nəzarətli öyrənmə (supervised learning)_* [haqqında](../master/.ipynb) 
 
 
 
