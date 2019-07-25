@@ -1,4 +1,4 @@
-### Giriş
+### Təqdimat
 
 ***Maşın öyrənməsinin qısaca təsnifatı***
 
