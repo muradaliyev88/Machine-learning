@@ -19,8 +19,8 @@ _Maşın öyrənməsi məlumatları araşdırmaq üçün riyazi modellər inşa 
 
 * Siniflənfirmə
 
-      Naive Bayes      
-      K-Nearest Neighbours      
+      K-Nearest Neighbours
+      Naive Bayes          
       Decision Tree      
       Random Forest      
       Support Vector Machine
