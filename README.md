@@ -6,6 +6,7 @@
 *_Nəzarətli öyrənmə (supervised learning) haqqında_*
 
 * Siniflənfirmə
+
       K-Nearest Neighbours 
       Naive Bayes 
       Decision Tree
