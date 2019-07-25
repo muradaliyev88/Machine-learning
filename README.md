@@ -18,15 +18,10 @@ _Maşın öyrənməsi məlumatları araşdırmaq üçün riyazi modellər inşa 
 1 Nəzarətli öyrənmə (supervised learning)
 
 * Siniflənfirmə
-
-      Naive Bayes 
-      
-      K-Nearest Neighbours 
-      
-      Decision Tree
-      
-      Random Forest
-      
+      Naive Bayes      
+      K-Nearest Neighbours      
+      Decision Tree      
+      Random Forest      
       Support Vector Machine
       
 
