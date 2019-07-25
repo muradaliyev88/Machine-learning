@@ -52,6 +52,7 @@ _Maşın öyrənməsi məlumatları araşdırmaq üçün riyazi modellər inşa 
     
 
 * Ölçü Azaltma (Dimensionality Reduction)
+
       PCA (Principal Component Analysis)
 
 
