@@ -18,6 +18,7 @@ _Maşın öyrənməsi məlumatları araşdırmaq üçün riyazi modellər inşa 
 1 Nəzarətli öyrənmə (supervised learning)
 
 * Siniflənfirmə
+
       Naive Bayes      
       K-Nearest Neighbours      
       Decision Tree      
@@ -40,6 +41,7 @@ _Maşın öyrənməsi məlumatları araşdırmaq üçün riyazi modellər inşa 
 2 Nəzarətsiz öyrənmə (unsupervised learning)
 
 * Kümələmə (Clustering)
+
       K-Means
 
 * Birlik Qaydası (Association Rule Mining )
