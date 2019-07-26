@@ -10,7 +10,7 @@
 
 
 
-*_Nəzarətli öyrənmə (supervised learning)_* [haqqında](../master/Nəzarətli\töyrənmə.ipynb) 
+*_Nəzarətli öyrənmə (supervised learning)_* [haqqında](../master/Nəzarətli%20öyrənmə.ipynb) 
 
 
 
