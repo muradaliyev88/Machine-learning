@@ -15,7 +15,7 @@
 
 
 
-* Siniflənfirmə
+* Sinifləndirmə
 
       K-Nearest Neighbours 
       Naive Bayes 
