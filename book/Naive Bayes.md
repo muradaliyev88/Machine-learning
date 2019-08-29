@@ -39,12 +39,21 @@ Hava məlumatlarını burada istifadə edirik
 # Naive Bayes Sinifləndiricinin növləri:
 
 ### Multinomial Naive Bayes:
+
+![](https://github.com/muradaliyev88/Machine-learning/blob/master/images/introduction-to-text-classification-using-naive-bayes-19-638.jpg)
+
 _Bu, əsasən mətinlərin idman, siyasət, texnologiya və s. Kateqoriyasına aid olub-olmaması üçün istifadə olunur._
 
 ### Bernoulli Naive Bayes:
+
+![](https://github.com/muradaliyev88/Machine-learning/blob/master/images/f6a27bc34d0c2ab16cb8ba203e5348741b5521e6.png)
+
 _Bu multinomial naive bayesə bənzəyir, lakin proqnoz verənlər `boolean` dəyişkənlərdir. Sinif dəyişkənlərini tapmaq üçün istifadə etdiyimiz parametrlər yalnızca bəli və ya yox olur məsələn, mətndə bir söz meydana gəldi və ya gəlmədi_.
 
 ### Gaussian Naive Bayes:
+
+![](https://github.com/muradaliyev88/Machine-learning/blob/master/images/1_0If5Mey7FnW_RktMM5BkaQ.png)
+
 _Proqnoz verənlər davamlı bir dəyəri aldığında və diskret olmadıqda, bu dəyərlərin gaussian distributordan nümunələndiyini varsayırıq._
 
 _Naive Bayes alqoritmləri əsasən həssaslıq, spam filtirlənməsində, tövsiyə sistemlərində və s. istifadə olunur. Təxminlər sürətlə həyata keçməkdədir, lakin ən böyük çatışmazlığı proqnozçıların sərbəst olmamasıdır. Real həyatda əksər hallarda, proqnozlaşdırıcılar asılıdır, bu təsnifatın işinə mane olur._
@@ -84,6 +93,84 @@ _Keçən dəfə ki bəhsimizdə olduğu kimi naive bayes modelimizi əvvəlcə �
 <pre>1.0</pre>
 
 _Ümumi olaraq bunları demək istəyirəmki məlumat toplusunda etiketlərin hansı siniflərə mənsub olması məlumdur və təsnifatlandırılacaq etiket üçün hər bir sinifin reallığa oxşarlığı proqnozlaşdırılır. Bu metodda etiketlərin statistik asılı olmaması fərz olunur.Ona görə sadədir ki təlim məlumatlarını yalnız bir dəfə keçmək yetərlidir və sadə əlaqələr yaranır._
+
+
+<tbody><tr><td style="width: 96px ; text-align: center"><strong>Name</strong></td><td style="width: 96px ; text-align: center"><strong>Yellow</strong></td><td style="width: 96px ; text-align: center"><strong>Sweet</strong></td><td style="width: 96px ; text-align: center"><strong>Long</strong></td><td style="width: 97px ; text-align: center"><strong>Total</strong></td></tr><tr><td style="width: 96px ; text-align: center"><strong>Mango</strong></td><td style="width: 96px ; text-align: center">350</td><td style="width: 96px ; text-align: center">450</td><td style="width: 96px ; text-align: center">0</td><td style="width: 97px ; text-align: center">650</td></tr><tr><td style="width: 96px ; text-align: center"><strong>Banana</strong></td><td style="width: 96px ; text-align: center">400</td><td style="width: 96px ; text-align: center">300</td><td style="width: 96px ; text-align: center">350</td><td style="width: 97px ; text-align: center">400</td></tr><tr><td style="width: 96px ; text-align: center"><strong>Others</strong></td><td style="width: 96px ; text-align: center">50</td><td style="width: 96px ; text-align: center">100</td><td style="width: 96px ; text-align: center">50</td><td style="width: 97px ; text-align: center">150</td></tr><tr><td style="width: 96px ; text-align: center"><strong>Total</strong></td><td style="width: 96px ; text-align: center">800</td><td style="width: 96px ; text-align: center">850</td><td style="width: 96px ; text-align: center">400</td><td style="width: 97px ; text-align: center">1200</td></tr></tbody>
+
+
+__Yuxarıdakı cədvələ əsasən 1200 meyvədən 650-si manqo, 400-ü banan, 150-i isə digərləri.650 manqonun cəmi 350-si  sarı.800 meyvə sarı, 850-si şirin, 400-ü isə uzun.__
+
+
+<tbody><tr><td style="width: 96px ; text-align: center"><strong>Name</strong></td><td style="width: 96px ; text-align: center"><strong>Yellow</strong></td><td style="width: 96px ; text-align: center"><strong>Sweet</strong></td><td style="width: 96px ; text-align: center"><strong>Long</strong></td><td style="width: 97px ; text-align: center"><strong>Total</strong></td></tr><tr><td style="width: 96px ; text-align: center"><strong>Mango</strong></td><td style="width: 96px ; text-align: center">350/800=P(Mango|Yellow)</td><td style="width: 96px ; text-align: center">450/850</td><td style="width: 96px ; text-align: center">0/400</td><td style="width: 97px ; text-align: center">650/1200=P(Mango)</td></tr><tr><td style="width: 96px ; text-align: center"><strong>Banana</strong></td><td style="width: 96px ; text-align: center">400/800</td><td style="width: 96px ; text-align: center">300/850</td><td style="width: 96px ; text-align: center">350/400</td><td style="width: 97px ; text-align: center">400/1200</td></tr><tr><td style="width: 96px ; text-align: center"><strong>Others</strong></td><td style="width: 96px ; text-align: center">50/800</td><td style="width: 96px ; text-align: center">100/850</td><td style="width: 96px ; text-align: center">50/400</td><td style="width: 97px ; text-align: center">150/1200</td></tr><tr><td style="width: 96px ; text-align: center"><strong>Total</strong></td><td style="width: 96px ; text-align: center">800=P(Yellow)</td><td style="width: 96px ; text-align: center">850</td><td style="width: 96px ; text-align: center">400</td><td style="width: 97px ; text-align: center">1200</td></tr></tbody>
+
+
+
+![](https://github.com/muradaliyev88/Machine-learning/blob/master/images/1-1.png)
+
+![](https://github.com/muradaliyev88/Machine-learning/blob/master/images/2-1.png)
+
+![](https://github.com/muradaliyev88/Machine-learning/blob/master/images/3-1.png)
+
+__Bizim nümunəmizdə, ən çox ehtimal sinif bananına görədir, uzun, şirin və sarı olan meyvə Naive Bayes Alqoritmi tərəfindən əldə edilən bir banandır.__
+
+
+_Verilənlərinizdə davamlı bir dəyişən varsa, onda Multinomial və Bernoulli uyğun deyil. Bunu məhdudlaşdıra bilərsiniz, lakin daha yaxşı olar ki Gaussian istifadə edək: Aşağıda olan kodlar (`GaussianNB2`) naive bayes üçün yazılmış kodlardır._
+
+
+`class GaussianNB2(object):`
+
+    def __init__(self):
+        pass
+
+    def fit(self, X, y):
+        separated = [[x for x, t in zip(X, y) if t == c] for c in np.unique(y)]
+        self.model = np.array([np.c_[np.mean(i, axis=0), np.std(i, axis=0)]
+                    for i in separated])
+        return self
+
+    def _prob(self, x, mean, std):
+        exponent = np.exp(- ((x - mean)**2 / (2 * std**2)))
+        return np.log(exponent / (np.sqrt(2 * np.pi) * std))
+
+    def predict_log_proba(self, X):
+        return [[sum(self._prob(i, *s) for s, i in zip(summaries, x))
+                for summaries in self.model] for x in X]
+
+    def predict(self, X):
+        return np.argmax(self.predict_log_proba(X), axis=1)
+
+    def score(self, X, y):
+        return sum(self.predict(X) == y) / len(y)
+
+
+
+`nb = GaussianNB2()`
+
+`nb.fit(X_train, y_train)`
+
+`X_new = np.array([[5, 2.9, 1, 0.2]])`
+
+`prediction = nb.predict(X_new)`
+
+`print("Təxmin olundu: {}".format(iris_dataset['target_names'][prediction]))`
+
+`print(nb.score(X_test, y_test))`
+
+
+<pre>Təxmin olundu: ['setosa']
+0.9736842105263158
+</pre>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
